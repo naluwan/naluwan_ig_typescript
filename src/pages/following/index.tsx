@@ -1,5 +1,8 @@
+import IGHeader from 'components/IGHeader';
+import * as React from 'react';
+
 const Following: React.FC = () => {
-  return <p>Following</p>;
+  return <IGHeader />;
 };
 
-export default Following;
+export default React.memo(Following);

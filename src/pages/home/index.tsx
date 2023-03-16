@@ -1,5 +1,8 @@
+import IGHeader from 'components/IGHeader';
+import * as React from 'react';
+
 const Home: React.FC = () => {
-  return <p>Home</p>;
+  return <IGHeader />;
 };
 
-export default Home;
+export default React.memo(Home);

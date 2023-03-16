@@ -1,4 +1,5 @@
 import { useRoutes } from 'react-router-dom';
+import * as React from 'react';
 import routes from './routes';
 
 const App: React.FC = () => {
@@ -6,4 +7,4 @@ const App: React.FC = () => {
   return element;
 };
 
-export default App;
+export default React.memo(App);
