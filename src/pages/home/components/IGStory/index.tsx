@@ -6,7 +6,7 @@ const IGStory = () => {
   const data = [
     {
       id: 1,
-      name: 'bruce_fe',
+      name: 'NaLuWan',
       avatar: '/images/avatars/a1.png',
     },
     {
@@ -51,7 +51,7 @@ const IGStory = () => {
     },
     {
       id: 10,
-      name: 'bruce_fe',
+      name: 'bruce',
       avatar: '/images/avatars/a10.png',
     },
   ];

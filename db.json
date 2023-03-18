@@ -2,8 +2,8 @@
   "posts": [
     {
       "id": 1,
-      "location": "布魯斯前端",
-      "account": "bruce_1234",
+      "location": "NaLuWan前端",
+      "account": "naluwan06",
       "avatar": "/images/avatars/a1.png",
       "photo": "/images/posts/main1.png",
       "likes": 999,
@@ -59,13 +59,13 @@
   "stories": [
     {
       "id": 1,
-      "name": "bruce_fe",
+      "name": "NaLuWan",
       "avatar": "/images/avatars/a1.png"
     },
     {
       "id": 2,
       "name": "max",
-      "avatar": "/images/avatars/a2.png"
+      "avatar": "/images/avatars/a4.png"
     },
     {
       "id": 3,
@@ -75,7 +75,7 @@
     {
       "id": 4,
       "name": "joanne",
-      "avatar": "/images/avatars/a4.png"
+      "avatar": "/images/avatars/a2.png"
     },
     {
       "id": 5,
@@ -104,7 +104,7 @@
     },
     {
       "id": 10,
-      "name": "bruce_fe",
+      "name": "bruce",
       "avatar": "/images/avatars/a10.png"
     }
   ]

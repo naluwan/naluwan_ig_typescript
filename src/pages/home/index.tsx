@@ -1,5 +1,6 @@
 import IGContainer from 'components/IGContainer';
 import IGHeader from 'components/IGHeader';
+import IGUser from 'components/IGUser';
 import * as React from 'react';
 import IGStory from './components/IGStory';
 
@@ -14,7 +15,16 @@ const Home: React.FC = () => {
             <IGStory />
           </div>
           {/* right */}
-          <div className='hidden lg:block lg:w-[424px]'>right</div>
+          <div className='hidden lg:block lg:w-[424px]'>
+            <IGUser
+              size='medium'
+              avatar='/images/avatars/a4.png'
+              account='naluwan06'
+              location='New Taipei City'
+              showFollow
+              isFollowing={false}
+            />
+          </div>
         </div>
       </IGContainer>
     </>
