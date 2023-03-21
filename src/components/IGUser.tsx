@@ -7,7 +7,7 @@ type IGUserProps = {
   account?: string;
   location?: string;
   avatar?: string;
-  // id?: number;
+  id?: number;
 };
 
 const IGUser: React.FC<IGUserProps> = (props) => {
@@ -18,7 +18,8 @@ const IGUser: React.FC<IGUserProps> = (props) => {
     account,
     location,
     avatar,
-    // id,
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    id,
   } = props;
   return (
     <div className='flex h-[70px] items-center box-border px-4'>
