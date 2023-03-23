@@ -1,4 +1,6 @@
 import React from 'react';
+import { useAppDispatch } from '../hooks';
+import { follow, unFollow } from '../slices/friendSlice';
 
 type IGUserProps = {
   size?: 'medium' | 'small';
@@ -18,9 +20,20 @@ const IGUser: React.FC<IGUserProps> = (props) => {
     account,
     location,
     avatar,
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     id,
   } = props;
+
+  const dispatch = useAppDispatch();
+
+  const followClickHandler = () => {
+    if (!id) return;
+    if (isFollowing) {
+      dispatch(unFollow(id));
+    } else {
+      dispatch(follow(id));
+    }
+  };
+
   return (
     <div className='flex h-[70px] items-center box-border px-4'>
       <div
@@ -42,6 +55,7 @@ const IGUser: React.FC<IGUserProps> = (props) => {
           className={`${
             isFollowing ? 'text-gray-700' : 'text-blue-400'
           } ml-auto text-xs font-bold cursor-pointer`}
+          onClick={followClickHandler}
         >
           {isFollowing ? 'FOLLOWING' : 'FOLLOW'}
         </p>

@@ -12,6 +12,7 @@ module.exports = {
     },
   },
   rules: {
+    'no-param-reassign': ['error', { props: false }],
     'jsx-a11y/click-events-have-key-events': 'off',
     'jsx-a11y/no-noninteractive-element-interactions': 'off',
     'react/no-unescaped-entities': 0,
