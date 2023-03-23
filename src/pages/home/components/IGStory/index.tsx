@@ -1,69 +1,23 @@
+import Loading from 'components/Loading';
 import React from 'react';
+import { useGetIGStoriesQuery } from 'services/homeServices';
 import Item from './Item';
 
 const IGStory = () => {
-  // TODO: del
-  const data = [
-    {
-      id: 1,
-      name: 'NaLuWan',
-      avatar: '/images/avatars/a1.png',
-    },
-    {
-      id: 2,
-      name: 'max',
-      avatar: '/images/avatars/a2.png',
-    },
-    {
-      id: 3,
-      name: 'fm',
-      avatar: '/images/avatars/a3.png',
-    },
-    {
-      id: 4,
-      name: 'joanne',
-      avatar: '/images/avatars/a4.png',
-    },
-    {
-      id: 5,
-      name: 'focus',
-      avatar: '/images/avatars/a5.png',
-    },
-    {
-      id: 6,
-      name: 'louis',
-      avatar: '/images/avatars/a6.png',
-    },
-    {
-      id: 7,
-      name: 'alvin',
-      avatar: '/images/avatars/a7.png',
-    },
-    {
-      id: 8,
-      name: 'grace',
-      avatar: '/images/avatars/a8.png',
-    },
-    {
-      id: 9,
-      name: 'rance',
-      avatar: '/images/avatars/a9.png',
-    },
-    {
-      id: 10,
-      name: 'bruce',
-      avatar: '/images/avatars/a10.png',
-    },
-  ];
+  const { data, isLoading } = useGetIGStoriesQuery('all');
 
   return (
     <div className='w-full h-[110px] box-border flex items-center overflow-x-auto overflow-y-hidden shadow-md no-scrollbar lg:my-8'>
-      {/* <Item name='NaluWan' avatar='/images/avatars/a1.png' />
-       */}
-      {data?.map((item) => {
-        const { id, name, avatar } = item;
-        return <Item key={id} name={name} avatar={avatar} />;
-      })}
+      {isLoading && (
+        <div className='flex justify-center w-full'>
+          <Loading />
+        </div>
+      )}
+      {!isLoading &&
+        data?.map((item) => {
+          const { id, name, avatar } = item;
+          return <Item key={id} name={name} avatar={avatar} />;
+        })}
     </div>
   );
 };
