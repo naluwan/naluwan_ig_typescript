@@ -1,6 +1,5 @@
 import IGContainer from 'components/IGContainer';
 import IGHeader from 'components/IGHeader';
-// import IGUser from 'components/IGUser';
 import * as React from 'react';
 import { useGetIGPostsQuery } from 'services/homeServices';
 import Loading from 'components/Loading';
