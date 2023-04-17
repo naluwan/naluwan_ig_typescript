@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/naluwan_ig_typescript/static/css/main.e26019b3.css",
-    "main.js": "/naluwan_ig_typescript/static/js/main.fb596f1e.js",
+    "main.js": "/naluwan_ig_typescript/static/js/main.d64394a5.js",
     "index.html": "/naluwan_ig_typescript/index.html",
     "main.e26019b3.css.map": "/naluwan_ig_typescript/static/css/main.e26019b3.css.map",
-    "main.fb596f1e.js.map": "/naluwan_ig_typescript/static/js/main.fb596f1e.js.map"
+    "main.d64394a5.js.map": "/naluwan_ig_typescript/static/js/main.d64394a5.js.map"
   },
   "entrypoints": [
     "static/css/main.e26019b3.css",
-    "static/js/main.fb596f1e.js"
+    "static/js/main.d64394a5.js"
   ]
 }
