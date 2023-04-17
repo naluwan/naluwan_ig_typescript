@@ -34,8 +34,8 @@
     "eject": "react-scripts eject",
     "prettier": "prettier -w ./src",
     "server": "json-server --watch db.json --port 3004 -d 1500",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "clean": "rm -rf build"
   },
   "eslintConfig": {
     "extends": [

@@ -11,7 +11,7 @@ const IGHeader: React.FC = () => {
         <img
           className='w-[100px] cursor-pointer'
           alt='logo.svg'
-          src='/images/logo.svg'
+          src='images/logo.svg'
           onClick={() => go('/')}
         />
         {/* right nav avatars */}

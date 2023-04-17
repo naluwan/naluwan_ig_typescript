@@ -8,7 +8,7 @@ const IGProfile: React.FC = () => {
 
   return (
     <div className='mt-8 ml-8 shadow-lg box-border p-2'>
-      <IGUser account='NaLuWan' location='新北中和' avatar='/images/avatar.png' size='medium' />
+      <IGUser account='NaLuWan' location='新北中和' avatar='images/avatar.png' size='medium' />
       <p className='font-bold text-gray-400 mt-4 mx-4 mb-3 text-sm'>You are following</p>
       {friends.map((item) => {
         const { id, account, avatar, isFollowing, location } = item;
